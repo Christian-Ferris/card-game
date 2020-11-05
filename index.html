@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<style>
+    h1 {
+        padding: 10px 0;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    #gameTable {
+        background-color: forestgreen;
+        height: 450px;
+        border: 2px dashed darkgreen;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="container w-75">
+        <h1>jQuery Card Table</h1>
+
+            <div id="gameTable" class="row">
+                <div class="col-2">
+                    <h2>Draw Deck</h2>
+                    <img id="drawDeck" src="cards-png-100x153-numbered/blue_back.png" alt="blue card back" height="153" width="100">
+                    <h4>Click to draw</h4>
+                </div>
+
+                <div id="playArea" class="col-8">
+                    <h2>Play Area</h2>
+                    <h4>Click a card to discard</h4>
+                    <button id="discardAllButton">Discard All</button>
+                    <br>
+                </div>
+
+                <div class="col-2">
+                    <h2>Discard Pile</h2>
+                    <div id="discardPile"></div>
+                </div>
+
+            </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
